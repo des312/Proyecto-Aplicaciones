@@ -33,7 +33,7 @@ const RegisterForm = () => {
         navigation.navigate(screen.account.account);
       } catch (error) {
         //console.log(error);
-        Toast.show({
+        ErrorToast.show({
           type: "error",
           position: "bottom",
           text1: "Error al registrarse",

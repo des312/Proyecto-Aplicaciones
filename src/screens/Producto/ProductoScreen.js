@@ -70,19 +70,22 @@ const ProductoScreen = () => {
         );
       })}
 
-      {productosRon.map((producto, index) => {
+    {productosRon.map((producto, index) => {
         return (
           <ListItem
           key={`ron-${index}`}
-            onPress={() => navigation.navigate(screen.producto.ron, producto)}
+            onPress={() =>
+              navigation.navigate(screen.producto.ron, producto)
+            }
           >
             <ListItem.Content style={styles.liststyle}>
-              <ListItem.Title  style={{fontSize:20, fontWeight: "bold"}}>{producto.name}</ListItem.Title>
-              <Image source={producto.Image} style={[styles.img, {marginLeft: 200}]} />
+              <ListItem.Title style={{fontSize:20, fontWeight: "bold"}}>{producto.name}</ListItem.Title>
+              <Image source={producto.Image} style={[styles.img, {marginLeft: 180}]} />
             </ListItem.Content>
           </ListItem>
         );
       })}
+
       {productosTequila.map((producto, index) => {
         return (
           <ListItem

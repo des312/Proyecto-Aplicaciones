@@ -1,6 +1,6 @@
 import React from "react";
 import { View, ScrollView } from "react-native";
-import { Text, Image, Input, Icon, Button } from "@rneui/themed";
+import { Text, Image, Input, Icon, Button } from '@rneui/themed';
 import { styles } from "./CuentaScreen.styles";
 import { useNavigation } from "@react-navigation/native";
 import { screen } from "../../utils/screenName";
@@ -61,7 +61,7 @@ const CuentaScreen = () => {
           placeholder="Correo electrónico"
           containerStyle={styles.input}
           rightIcon={
-            <Icon type="material-community" name="at" iconStyle={styles.icon} />
+            <Icon type="material-community" name="atom" iconStyle={styles.icon} />
           }
           onChangeText={(text) => formik.setFieldValue("email", text)}
           errorMessage={formik.errors.email}

@@ -5,11 +5,11 @@ export const styles = StyleSheet.create({
     backgroundColor: "#B8FBF0",
   },
   title: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 10,
-    marginTop: -35,
+    marginTop: -20,
   },
   content: {
     marginHorizontal: 30,
@@ -35,5 +35,7 @@ export const styles = StyleSheet.create({
     color:"#00597C",
   },
   btnLogin: {},
-  btnContainer:{},
+  btnContainer:{
+    backgroundColor: "#25F05F",
+  },
 });

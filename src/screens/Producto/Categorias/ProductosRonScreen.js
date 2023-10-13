@@ -5,6 +5,7 @@ import { ListItem } from "@rneui/themed";
 import { useNavigation } from "@react-navigation/native";
 import { Image } from "@rneui/base";
 import { styles } from "./Productos.styles";
+
 const ProductosRonScreen = ({route, setNewProduct, navigation}) => {
   const product = route.params;
   const agregarCarro = () => {
@@ -13,13 +14,12 @@ const ProductosRonScreen = ({route, setNewProduct, navigation}) => {
   };
 
   let price = 20,
-    price1 = 30;
-  iva= 0.12;
-  resultado = 0;
+     price1 = 30,
+    iva= 0.12,
+    resultado = 0;
   
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
-
   const productosL = [
     {
       id: 1781,
